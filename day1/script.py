@@ -1,3 +1,5 @@
+from utils import readFile
+
 def part1(value_list: list):
     final_values = []
 
@@ -83,7 +85,6 @@ def part2(value_list: list):
         
 
 
-with open("values.txt", 'r') as cvalues:
-    value_list = [cvalue.rstrip() for cvalue in cvalues.readlines()]
+value_list = readFile("day1")
 
 print("Part 1: ", part1(value_list), "\nPart 2: ", part2(value_list))
